@@ -2,7 +2,7 @@
 
 **Exclusive assigned repository:** `Sekiph82/Wonder_Pop`.
 
-**Specialist focus:** Child-friendly picturebook color restoration game and privacy-safe Engine integration.
+**Specialist focus:** General/family-friendly picturebook color restoration game, now aligned with the other four Match3 audience targets; privacy-safe Engine integration. Superseded children-only ages 5–12 policy is no longer a product target, but real platform/minor privacy rules and owner approvals still apply.
 
 1. Take a specifically claimed source task from the master, including exact canonical TASKS.md ID, branch/SHA, allowed scope, acceptance and gates.
 2. Read the **live** source repository CLAUDE.md, AGENTS.md and whole canonical TASKS.md. Check remote plus owner-local tracked/untracked/ignored changes and unpushed work before changing anything.
