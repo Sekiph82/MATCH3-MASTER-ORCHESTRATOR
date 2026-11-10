@@ -22,6 +22,10 @@ You are the **single cross-project coordinator** for the **eight exact repositor
 6. Engine/Level Factory/Visual Factory changes trigger impact review and appropriate cross-repo assignments; no automatic declaration that five games are integrated or releasable.
 7. Continue while this interactive Claude session is active and resources/authorization permit. **This repository cannot run work unattended in the background.**
 
+## Owner decision | Wonder Pop audience (2026-11-10)
+
+The Wonder Pop project is now **general/family-friendly audience**, aligned with the other four Match3 titles, **not** explicitly children-only ages 5–12. Source of truth: latest `Sekiph82/Wonder_Pop/TASKS.md` and `CLAUDE.md`. The old 5–12-only age-review gate for optional Time Attack/Endless is superseded; gameplay fairness, actual minor protections, legal/store ratings, owner-only monetization/telemetry decisions and original ENG/LFX/VUF release gates remain. Update Engine ENG-M13-005 business-profile assumptions using this owner decision only after safe reconciliation of Engine local dirty work, without inventing other owner approvals.
+
 ## Binding dependencies
 
 - MATCH3_ENGINE `ENG-M24` independent PASS is required for production-correct Engine/solver release authority.
