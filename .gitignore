@@ -1,0 +1,11 @@
+# Do not commit credentials or local Claude runtime details
+.env
+.env.*
+*.token
+*.pem
+*.key
+.claude/projects/
+.claude/todos/
+.claude/tasks/
+.claude/debug/
+__pycache__/

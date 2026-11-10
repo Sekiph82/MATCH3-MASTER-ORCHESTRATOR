@@ -1,0 +1,78 @@
+schema_version: 1
+github_owner: Sekiph82
+default_branch: main
+master_repository: Sekiph82/MATCH3-MASTER-ORCHESTRATOR
+source_of_truth: each_repository/TASKS.md
+repositories:
+  - id: level-factory
+    full_name: Sekiph82/Match3-Level-Factory
+    url: https://github.com/Sekiph82/Match3-Level-Factory
+    kind: factory
+    default_branch: main
+    task_file: TASKS.md
+    agent: level-factory
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: engine
+    full_name: Sekiph82/MATCH3_ENGINE
+    url: https://github.com/Sekiph82/MATCH3_ENGINE
+    kind: core
+    default_branch: main
+    task_file: TASKS.md
+    agent: engine
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: visual-factory
+    full_name: Sekiph82/MATCH3-Visual-UI-Factory
+    url: https://github.com/Sekiph82/MATCH3-Visual-UI-Factory
+    kind: factory
+    default_branch: main
+    task_file: TASKS.md
+    agent: visual-factory
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: coral-rescue
+    full_name: Sekiph82/Coral_Rescue
+    url: https://github.com/Sekiph82/Coral_Rescue
+    kind: game
+    default_branch: main
+    task_file: TASKS.md
+    agent: coral-rescue
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: garage-legends
+    full_name: Sekiph82/Garage_Legends
+    url: https://github.com/Sekiph82/Garage_Legends
+    kind: game
+    default_branch: main
+    task_file: TASKS.md
+    agent: garage-legends
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: dino-islands
+    full_name: Sekiph82/Dino_Islands
+    url: https://github.com/Sekiph82/Dino_Islands
+    kind: game
+    default_branch: main
+    task_file: TASKS.md
+    agent: dino-islands
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: wonder-pop
+    full_name: Sekiph82/Wonder_Pop
+    url: https://github.com/Sekiph82/Wonder_Pop
+    kind: game
+    default_branch: main
+    task_file: TASKS.md
+    agent: wonder-pop
+    local_checkout: discover_and_verify
+    read_latest_before_work: true
+  - id: fractured-realms
+    full_name: Sekiph82/The_Fractured_Realms
+    url: https://github.com/Sekiph82/The_Fractured_Realms
+    kind: game
+    default_branch: main
+    task_file: TASKS.md
+    agent: fractured-realms
+    local_checkout: discover_and_verify
+    read_latest_before_work: true

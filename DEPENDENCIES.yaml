@@ -1,0 +1,32 @@
+schema_version: 1
+notes: "High-level release and impact sequencing only. Source TASKS.md and independent acceptance are authoritative."
+required_release_gates:
+  - id: engine-final
+    repository: Sekiph82/MATCH3_ENGINE
+    task_or_milestone: ENG-M24
+    required_state: independent_PASS
+  - id: level-factory-final
+    repository: Sekiph82/Match3-Level-Factory
+    task_or_milestone: LFX-M14
+    required_state: independent_PASS
+  - id: visual-factory-final
+    repository: Sekiph82/MATCH3-Visual-UI-Factory
+    task_or_milestone: VUF-M11
+    required_state: independent_PASS
+downstream_games:
+  - Sekiph82/Coral_Rescue
+  - Sekiph82/Garage_Legends
+  - Sekiph82/Dino_Islands
+  - Sekiph82/Wonder_Pop
+  - Sekiph82/The_Fractured_Realms
+change_impact_rules:
+  - origin: MATCH3_ENGINE
+    review_targets: [Match3-Level-Factory, MATCH3-Visual-UI-Factory, Coral_Rescue, Garage_Legends, Dino_Islands, Wonder_Pop, The_Fractured_Realms]
+    verify: "SDK/API, gameplay rules, actual IDs, replay, runtime and native test compatibility"
+  - origin: Match3-Level-Factory
+    review_targets: [MATCH3_ENGINE, Coral_Rescue, Garage_Legends, Dino_Islands, Wonder_Pop, The_Fractured_Realms]
+    verify: "Export schema, real game replay WIN, level acceptance"
+  - origin: MATCH3-Visual-UI-Factory
+    review_targets: [MATCH3_ENGINE, Coral_Rescue, Garage_Legends, Dino_Islands, Wonder_Pop, The_Fractured_Realms]
+    verify: "Asset rights, actual IDs, UI hooks, accessibility and integration"
+scheduling: "Independent dependency-safe tasks may run concurrently before final gates; production/release remains BLOCKED."
